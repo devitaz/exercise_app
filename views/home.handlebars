@@ -1,0 +1,45 @@
+<script>
+	$(document).ready(function(){
+		$("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+	});
+</script>
+	
+<div class="editContainer"></div>
+<div class="tableContainer"></div>
+<form class ="input post col-md-6">
+<table class = "inputTable table-condensed">
+	<tr>
+		<td colspan="6" class ="headTr">
+			<font size="5"><b>Add Exercise</b></font>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Name:</label><br>
+			<input type="text" class="name">
+		</td>
+		<td>
+			<label>Reps:</label><br>
+			<input type="number" class="reps">
+		</td>
+		<td>
+			<label>Weight:</label><br>
+			<input type="number" class="weight">
+		</td>
+		<td>
+			<label>Units:</label><br>
+			<select class="units">
+				<option val="0">kg</option>
+				<option val="1">lbs</option>
+			</select>
+		</td>
+		<td>
+			<label>Date:</label><br>
+			<input class="date" id="datepicker" />
+		</td>
+		<td valign="bottom" align="left" style="padding-left: 10px;">
+			<button class="submitRow btn-success" type="submit">Submit</button>
+		</td>
+	</tr>
+</table>
+</form>
